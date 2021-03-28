@@ -90,7 +90,12 @@ def delete(id_utente):
         code = getErrorCode(result)
         return '',code
     else:
-        return '',200
+        result = user.deleteUser(id_utente)
+        if result is not user.Result.OK:
+            code = getErrorCode(result)
+            return '',code
+        else:    
+            return '',200
             
             
 
