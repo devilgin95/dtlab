@@ -100,4 +100,4 @@ def delete(id_utente):
             
 
 if __name__ == '__main__':
-    app.run(host='localhost',port=5000,debug=True)
+    app.run(host='5050',port=5000,debug=True)
